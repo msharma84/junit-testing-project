@@ -1,6 +1,5 @@
 package com.msharma.junit.testing;
 
-import org.junit.Before;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -22,8 +21,15 @@ public class JUint5LifeCycle {
 	}
 	
 	@Test
-	void sampleTest() {
-		System.out.println("Sample Test Case...");
+	@DisplayName("Test One")
+	void sampleTestOne() {
+		System.out.println("Sample Test One Case...");
+	}
+	
+	@Test
+	@DisplayName("Test Two")
+	void sampleTestTwo() {
+		System.out.println("Sample Test Two Case...");
 	}
 	
 	@AfterEach
